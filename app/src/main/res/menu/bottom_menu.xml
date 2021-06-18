@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/jobsFragment"
+        android:title="jobsFragment" />
+    <item
+        android:id="@+id/urgent_jobs_fragment"
+        android:title="urgentJobsFragment" />
+    <item
+        android:id="@+id/savedJobsFragment"
+        android:title="savedJobsFragment" />
+</menu>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/jobsFragment">
+
+    <fragment
+        android:id="@+id/jobsFragment"
+        android:name="com.magednan.jobhunter.ui.fragments.main.JobsFragment"
+        android:label="jobs_fragment"
+        tools:layout="@layout/jobs_fragment" >
+        <action
+            android:id="@+id/action_jobsFragment_to_jobDetailsFragment"
+            app:destination="@id/jobDetailsFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/urgent_jobs_fragment"
+        android:name="com.magednan.jobhunter.ui.fragments.main.UrgentJobFragment"
+        android:label="remote_jobs_fragment"
+        tools:layout="@layout/urgent_jobs_fragment" >
+
+        <action
+            android:id="@+id/action_urgent_jobs_fragment_to_create_job_fragment"
+            app:destination="@id/create_job_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jobDetailsFragment"
+        android:name="com.magednan.jobhunter.ui.fragments.main.JobDetailsFragment"
+        android:label="job_details_fragment"
+        tools:layout="@layout/job_details_fragment" >
+        <argument
+            android:name="job"
+            app:argType="com.magednan.jobhunter.models.Job" />
+        <action
+            android:id="@+id/action_jobDetailsFragment_to_applyFragment"
+            app:destination="@id/applyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchJobFragment"
+        android:name="com.magednan.jobhunter.ui.fragments.main.SearchJobFragment"
+        android:label="search_job_fragment"
+        tools:layout="@layout/search_job_fragment" >
+        <action
+            android:id="@+id/action_searchJobFragment_to_jobDetailsFragment"
+            app:destination="@id/jobDetailsFragment" />
+        <argument
+            android:name="search item"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedJobsFragment"
+        android:name="com.magednan.jobhunter.ui.fragments.main.SavedJobsFragment"
+        android:label="saved_jobs_fragment"
+        tools:layout="@layout/saved_jobs_fragment" >
+        <action
+            android:id="@+id/action_savedJobsFragment_to_jobDetailsFragment"
+            app:destination="@id/jobDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/applyFragment"
+        android:name="com.magednan.jobhunter.ui.fragments.main.ApplyFragment"
+        android:label="ApplyFragment" >
+        <argument
+            android:name="job url"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/create_job_fragment"
+        android:name="com.magednan.jobhunter.ui.fragments.main.CreateJobFragment"
+        android:label="create_job_fragment" />
+</navigation>

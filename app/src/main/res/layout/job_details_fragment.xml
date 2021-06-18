@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/jobd_frag_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/jobd_frag_tv_job_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:text="TextView" />
+
+                    <TextView
+                        android:id="@+id/jobd_frag_tv_company_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:text="TextView" />
+
+                    <TextView
+                        android:id="@+id/jobd_frag_tv_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:text="TextView" />
+
+                    <TextView
+                        android:id="@+id/jobd_frag_tv_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:text="TextView" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/jobd_frag_iv_logo"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+            </LinearLayout>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/jobd_frag_tv_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+            </ScrollView>
+
+
+        </LinearLayout>
+
+        <io.github.yavski.fabspeeddial.FabSpeedDial
+            android:id="@+id/f_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="4dp"
+            app:fabGravity="bottom_end"
+            app:fabMenu="@menu/fab_menu"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            app:miniFabBackgroundTint="@android:color/white"
+            app:miniFabDrawableTint="?attr/colorPrimaryDark"
+            app:miniFabTitleTextColor="?attr/colorPrimaryDark" />
+
+    </RelativeLayout>
+</layout>
