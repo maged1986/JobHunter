@@ -1,8 +1,52 @@
-# JobHunter
-Job board app
+# 🎯 Job Hunter - Android App
+
+**Job Hunter** is a modern, high-performance Android application designed to streamline the job searching process. Built with **Kotlin** and following the latest Android development best practices, it demonstrates a robust implementation of **Clean Architecture** and **Modern UI** principles.
+
+---
+
+## 🛠 Tech Stack & Tools
+
+- **Language:** [Kotlin](https://kotlinlang.org/) - 100%
+- **UI Framework:** [Jetpack Compose](https://developer.android.com/jetpack/compose) - Declarative UI for modern Android development.
+- **Architecture:** Clean Architecture with **MVVM** (Model-View-ViewModel) pattern.
+- **Asynchronous Programming:** [Coroutines](https://kotlinlang.org/docs/coroutines-overview.html) & [Flow](https://kotlinlang.org/docs/flow.html) for reactive data streams.
+- **Dependency Injection:** [Dagger Hilt](https://developer.android.com/training/dependency-injection/hilt-android) - For scalable and testable code.
+- **Networking:** [Retrofit](https://square.github.io/retrofit/) & [OkHttp](https://square.github.io/okhttp/) for REST API communication.
+- **Local Storage:** [Room Database](https://developer.android.com/training/data-storage/room) - Offline-first support and caching.
+- **Image Loading:** [Coil](https://coil-kt.github.io/coil/) - Kotlin-first image loading library.
+
+---
+
+## ✨ Key Features
+
+- **Real-time Job Search:** Search and filter jobs from multiple sources.
+- **Offline Mode:** Browse previously viewed jobs without an internet connection using Room caching.
+- **Modern Navigation:** Implemented using **Jetpack Navigation Compose**.
+- **Responsive Design:** Supports various screen sizes with a polished Material 3 UI.
+- **Dark Mode Support:** Fully adaptive UI for light and dark themes.
+
+---
+
+## 🏗 Architecture Overview
+
+The project follows **Clean Architecture** principles to ensure separation of concerns, testability, and maintainability:
+
+1. **Domain Layer:** Contains Business Logic, Use Cases, and Entities (Pure Kotlin).
+2. **Data Layer:** Handles Data Sources (API & Local DB) and Repository implementations.
+3. **Presentation Layer:** State management using ViewModels and UI rendering with Jetpack Compose.
 
 
-## Getting Started
+
+[Image of Clean Architecture in Android]
+
+
+---
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/maged1986/JobHunter.git](https://github.com/maged1986/JobHunter.git)
 
 This program is originally based on recipesapi which allows recpies from various sources to be presented
 ![Screenshot_1623697679](https://user-images.githubusercontent.com/64534412/122489822-cdf5e400-cfe0-11eb-8090-f46f70eed708.png)
@@ -24,7 +68,7 @@ This program is originally based on recipesapi which allows recpies from various
 * DrakView
 
 ## Authors
-Maged Noshy fakhary See also the list of contributors who participated in this project.
+Maged Nan .
 
 ## License
 This project is licensed under the apache license - see the LICENSE.txt file for details
